@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Babycat</title>
+    <link rel="icon" href="" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,13 +17,13 @@
 </head>
 <body>
     <div class = frame>
-    <div class = "bear">
-        <img src = "https://i.pinimg.com/1200x/8f/30/57/8f3057172871f5b23fb3dbdc0ff409ea.jpg"> 
-        <img src = "https://i.postimg.cc/vmncfhZp/d-sin-th-y-ngmi-di-t-ngch-x-(1).png">
-        <img src = "https://i.postimg.cc/vmncfhZp/d-sin-th-y-ngmi-di-t-ngch-x-(1).png">
-    </div>
-     <div class = "content">
-        <!-- Left Column -->
+        <div class = "content">
+            <div class = "bear">
+                <img src = "https://i.pinimg.com/1200x/8f/30/57/8f3057172871f5b23fb3dbdc0ff409ea.jpg"> 
+                <img src = "https://i.postimg.cc/vmncfhZp/d-sin-th-y-ngmi-di-t-ngch-x-(1).png">
+                <img src = "https://i.postimg.cc/vmncfhZp/d-sin-th-y-ngmi-di-t-ngch-x-(1).png">
+            </div>
+            <!-- Left Column -->
         <div class = "left-column">
             <div class = "welcome-box">
                 <img src = "https://i.postimg.cc/15xnRLRN/d-sin-th-y-ngmi-di-t-ngch-x-(5).png">
@@ -49,26 +50,26 @@
                     MEOW'S CHATBOX !
                 </h1>
                 <p>
-                    Gmail :
                     <span class = "skytext">
-                        mkjidapa0108@gmail.com
-                        <br>
+                        Gmail :
                     </span>
-                    Instagram :
+                    mkjidapa0108@gmail.com
+                    <br>
                     <span class = "skytext">
-                        babycat._meow
-                        <br>
+                        Instagram :
                     </span> 
-                    Facebook :
+                    babycat._meow
+                    <br>
                     <span class = "skytext">
-                        Mickey Mickey
-                        <br>
+                        Facebook :
                     </span> 
-                    Tel :
+                    Mickey Mickey
+                    <br>
                     <span class = "skytext">
-                        (+66) 095-352-5151
-                        <br>
+                        Tel :
                     </span> 
+                    (+66) 095-352-5151
+                    <br>
                 </p>
             </div>
         </div>
@@ -111,30 +112,30 @@
                     MY LITTLE DIARY FOR TODAY ♡ 
                 </h1>
                 <p>
-                    08:30 – 17:00 :
-                    <span class = "orangetext">
-                        POSN MATH CAMP HEHE~
-                        <br>
+                    <span class = "pptext">
+                        08:30 – 17:00 :
                     </span>
-                    17:00 – 18:00 :
-                    <span class = "orangetext">
-                        DINNER TIME + A COZY NAP.
-                        <br>
-                    </span> 
-                    18:30 – 20:30 :
-                    <span class = "orangetext">
-                        POSN MATH CAMP AGAIN T--T
-                        <br>
-                    </span> 
-                    20:30 – 00:00 :
-                    <span class = "orangetext">
-                        VALO CALLING ME >--<
-                        <br>
-                    </span> 
-                    00.00 - 07.00 : 
-                    <span class = "orangetext">
-                        DREAMLAND AGAIN~
+                    POSN MATH CAMP HEHE~
+                    <br>
+                    <span class = "pptext">
+                        17:00 – 18:00 :
                     </span>
+                    DINNER TIME + A COZY NAP.
+                    <br>
+                    <span class = "pptext">
+                        18:30 – 20:30 :
+                    </span>
+                    POSN MATH CAMP AGAIN T--T
+                    <br>
+                    <span class = "pptext">
+                        20:30 – 00:00 :
+                    </span>
+                    VALO CALLING ME >--<
+                    <br>
+                    <span class = "pptext">
+                        00.00 - 07.00 :
+                    </span>
+                    DREAMLAND AGAIN~
                 </p>
             </div>
             <div class = thbut>
@@ -177,6 +178,10 @@
     body{
         background-image: url("https://i.pinimg.com/736x/24/5b/cf/245bcf0c4f842cba6e63a1a7c89f5a29.jpg");
     }
+    ::selection{
+        background-color: lightpink;
+        color: rgb(255, 255, 255);
+    }
     .frame{
         margin: auto;
         max-width: 900px;
@@ -186,7 +191,10 @@
         height: 300px;
     }
     .bear {
+        grid-column: 1 / -1;
+        width: 100%;
         position: relative;
+        margin-bottom: 20px;
     }
     .bear img:nth-child(1){
         width: 100%;
@@ -210,7 +218,7 @@
         display: grid;
         grid-template-columns: 5fr 7fr;
         column-gap: 20px;
-        padding: 20px 10px;
+        /* padding: 20px 10px; */
     }
     .left-column{
         display: flex;
@@ -279,17 +287,36 @@
     .intro-box h1 .meow{
         color: #f48f4b;
     }
+    .intro-box h1 .meow::selection{
+        background-color: lightsalmon;
+        color: rgb(255, 255, 255);
+    }
     .intro-box p .bluetext{
         color: #4bc4f4;
+    }
+    .intro-box p .bluetext::selection{
+        background-color: lightskyblue;
+        color: rgb(255, 255, 255);
     }
     .intro-box p .pptext{
         color: #a56aff;
     }
+    .intro-box p .pptext::selection{
+        background-color: rgb(234, 165, 245);
+        color: rgb(255, 255, 255);
+    }
     .welcome-box p .bluetext{
         color: #4bc4f4;
     }
+    .welcome-box p .bluetext::selection{
+        background-color: lightskyblue;
+        color: rgb(255, 255, 255);
+    }
     .welcome-box p .pptext{
         color: #a56aff;
+    }.welcome-box p .pptext::selection{
+        background-color: rgb(234, 165, 245);
+        color: rgb(255, 255, 255);
     }
     .intro-box h1{
         font-size: 50px;
@@ -344,22 +371,30 @@
     }
     .contact h1{
         margin-top: 10px;
-        font-size: 33px;
+        font-size: 32px;
         color:#a56aff;
         font-family: Margarine;
         font-weight: bold;
         text-align: center;
     }
+    .contact h1::selection{
+        background-color: rgb(234, 165, 245);
+        color: rgb(255, 255, 255);
+    }
     .contact p .skytext{
-        font-weight: normal;
-        color: #eb9bc3;
+        font-weight: bold;
+        color: #4bc4f4;
+    }
+    .contact p .skytext::selection{
+        background-color: lightskyblue;
+        color: rgb(255, 255, 255);
     }
     .contact p{
         margin-top: -5px;
         font-size: 25px;
         font-family: Dekko;
-        font-weight: bold;
-        color: #4bc4f4;
+        font-weight: normal;
+        color: #eb9bc3;
         text-align: left;
         padding-left: 30px;
     }
@@ -382,16 +417,24 @@
         color:#4bc4f4;
         text-align: center;
     }
-    .diary p .orangetext{
-        font-weight: normal;
-        color:#eb9bc3;
+    .diary h1::selection{
+        background-color: lightskyblue;
+        color: rgb(255, 255, 255);
+    }
+    .diary p .pptext{
+        font-weight: bold;
+        color:#a56aff;
+    }
+    .diary p .pptext::selection{
+        background-color: rgb(234, 165, 245);
+        color: rgb(255, 255, 255);
     }
     .diary p{
         margin-top: 0px;
         font-size: 28px;
         font-family: Dekko;
-        font-weight: bold;
-        color:#a56aff;
+        font-weight: normal;
+        color:#eb9bc3;
         text-align: left;
         padding-left: 30px;
     }
